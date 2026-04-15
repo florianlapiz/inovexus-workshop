@@ -8,9 +8,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@900&family=Inter:wght@400;500;600;700&display=swap');
         :root {
             --bg: #0a0a0a;
-            --surface: #141414;
+            --surface: #1a1a1a;
             --surface-hover: #1c1c1c;
-            --border: #2a2a2a;
+            --border: #3a3a3a;
             --accent: #e67e22;
             --accent-light: #f0a04b;
             --accent-glow: rgba(230, 126, 34, 0.12);
@@ -56,7 +56,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #d4872e 0%, #c06a35 15%, #9a4a40 28%, #6e2e4e 42%, #4a1f55 55%, #301650 65%, #1c0e35 78%, #0e0a1a 90%, #0a0a0a 100%);
+            background: linear-gradient(135deg, #c87a2a 0%, #a04e38 10%, #803a50 22%, #602565 35%, #4c1a78 48%, #3d1580 58%, #2e1070 68%, #1e0a50 80%, #0f0628 90%, #0a0a0a 100%);
             opacity: 1;
             animation: none;
         }
@@ -591,570 +591,130 @@
     </div>
 </div>
 
-<!-- ── Nav ── -->
-<nav class="section-nav">
-    <div class="nav-inner">
-        <button class="nav-btn active" data-section="overview">Overview</button>
-        <button class="nav-btn" data-section="part1">Part 1 — Framework</button>
-        <button class="nav-btn" data-section="part2">Part 2 — Live Build</button>
-        <button class="nav-btn" data-section="part3">Part 3 — Takeaways</button>
-        <button class="nav-btn" data-section="matrix">Why This Works</button>
-    </div>
-</nav>
+<!-- ── Content ── -->
+<div class="container" style="padding-top: 48px; padding-bottom: 80px;">
 
-<!-- ══════════════ OVERVIEW ══════════════ -->
-<div class="container">
-<section class="section active" id="overview">
+    <!-- ── Agenda Overview ── -->
     <div class="section-header">
-        <div class="section-label">Workshop Blueprint</div>
-        <h2>The Core Thesis</h2>
-        <p>Great outbound results don't come from more emails or better tools. They come from deep problem understanding, relevant messaging, and targeted automation — in that exact order.</p>
-    </div>
-
-    <div class="tag-row">
-        <span class="tag purple">GTM Strategist (Maja Voje)</span>
-        <span class="tag blue">Jordan Crawford / Blueprint</span>
-        <span class="tag green">Clay</span>
+        <div class="section-label">60-Minute Agenda</div>
+        <h2>Workshop Structure</h2>
     </div>
 
     <div class="card" onclick="toggleCard(this)">
         <div class="card-header">
             <div class="card-icon" style="background: var(--purple-bg); color: var(--purple);">1</div>
             <div class="card-title-group">
-                <div class="card-title">Problem Space Before Outbound</div>
-                <div class="card-subtitle">GTM Strategist Framework</div>
+                <div class="card-title">Outbound Fundamentals</div>
+                <div class="card-subtitle">Why most outbound fails — and how to fix it</div>
             </div>
-            <div class="card-time">8 min</div>
+            <div class="card-time">20 min</div>
             <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
         </div>
-        <div class="card-body">
-            <div class="card-content">
-                <p>Before writing a single outbound email, you need to understand your customer's problem across four layers. Most campaigns fail here — not at the tool level.</p>
-                <h4>The 4 Layers of Customer Pain</h4>
-                <ul>
-                    <li><strong>Functional:</strong> What's broken, slow, or manual in their workflow?</li>
-                    <li><strong>Emotional:</strong> What frustrates them? What keeps them up at night?</li>
-                    <li><strong>Social:</strong> How do they look to their boss, board, or peers?</li>
-                    <li><strong>Financial:</strong> Where are they losing money or missing revenue?</li>
-                </ul>
-                <h4>The Workaround Test</h4>
-                <p>Ask: "What's the worst workaround your target customer uses today?" If the answer is "Excel", "manually via email", "nothing", or "an intern does it" — you've found a real problem. The worse the workaround, the higher the willingness to pay.</p>
-                <h4>Value Proposition Quick Check</h4>
-                <p>Can you complete this bridge: Customer Pain &rarr; Your Pain Reliever? If you can't name a specific customer pain for each feature you plan to pitch — you lack clarity. No tool can fix that.</p>
-            </div>
-        </div>
+        <div class="card-body"><div class="card-content">
+            <h4>Problem-First Thinking</h4>
+            <p>Most outbound fails because founders pitch features instead of addressing pain. We'll cover how to understand your customer's problem before writing a single email.</p>
+            <h4>Relevance Over Personalization</h4>
+            <p>Why "I saw your LinkedIn post" doesn't work — and what to do instead. The difference between emails that get ignored and emails that get replies.</p>
+            <h4>The Outbound Stack for Seed-Stage</h4>
+            <p>Clay + Instantly + AI — what you need, what you don't, and how it fits together. No 6-tool complexity.</p>
+        </div></div>
     </div>
 
     <div class="card" onclick="toggleCard(this)">
         <div class="card-header">
             <div class="card-icon" style="background: var(--blue-bg); color: var(--blue);">2</div>
             <div class="card-title-group">
-                <div class="card-title">Relevance Over Personalization</div>
-                <div class="card-subtitle">Jordan Crawford Methodology</div>
+                <div class="card-title">Use Cases & Playbooks</div>
+                <div class="card-subtitle">Real examples from real campaigns</div>
             </div>
-            <div class="card-time">10 min</div>
-            <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="card-body">
-            <div class="card-content">
-                <p>Most outbound guides say "personalize your emails." That advice produces emails like "I saw your LinkedIn post" — which proves you Googled their name, nothing more. Crawford's counter-thesis: <strong>Relevance beats personalization.</strong></p>
-                <h4>The Difference in Practice</h4>
-                <div class="example-block">
-                    <div class="example-label weak">Personalized (weak)</div>
-                    <p>"Hi Thomas, I noticed you work at Company X and your team is growing. We help SaaS companies with lead generation..."</p>
-                </div>
-                <div class="example-block">
-                    <div class="example-label strong">Relevant (strong)</div>
-                    <p>"Thomas, you have 3 open SDR roles on your careers page. That means your outbound needs to scale — but new SDRs take 3-6 months to ramp. What if you could get the pipeline output of a 3-person SDR team in 2 weeks, without hiring anyone?"</p>
-                </div>
-                <h4>Micro-Campaigns: Quality Over Volume</h4>
-                <p>50 deeply researched accounts beat 5,000 generic contacts. A 50-account micro-campaign typically sees 8-15% reply rates vs. 1-2% for spray-and-pray. For seed-stage startups, you need 5-10 real conversations — not 75 "please unsubscribe" replies.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card" onclick="toggleCard(this)">
-        <div class="card-header">
-            <div class="card-icon" style="background: var(--green-bg); color: var(--green);">3</div>
-            <div class="card-title-group">
-                <div class="card-title">Live Build with Clay</div>
-                <div class="card-subtitle">Hands-on session with real ICPs</div>
-            </div>
-            <div class="card-time">25 min</div>
-            <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="card-body">
-            <div class="card-content">
-                <p>2-3 startups from the room bring their target customer. Florian builds the complete workflow live in Clay — from research to a finished email that could only be sent to that one company.</p>
-                <h4>Live Build Steps</h4>
-                <ul>
-                    <li><strong>Problem Check:</strong> "Describe your best customer in 2 sentences. What's their biggest problem — in their words, not yours?"</li>
-                    <li><strong>Account Research in Clay:</strong> Enrich the target company's website, pull job postings, check tech stack</li>
-                    <li><strong>AI Research Agent:</strong> Prompt Claude to analyze the company and hypothesize their most likely problem</li>
-                    <li><strong>Write the Email:</strong> Pain-first framework — Problem &rarr; Implication &rarr; Solution &rarr; Soft CTA</li>
-                    <li><strong>Group Critique:</strong> "Is this email relevant — or just personalized? Could it be sent to 500 other companies?"</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ══════════════ PART 1 ══════════════ -->
-<section class="section" id="part1">
-    <div class="section-header">
-        <div class="section-label">Part 1 — 30 Minutes</div>
-        <h2>The Framework</h2>
-        <p>Three interconnected layers: understand the problem, craft relevant messaging, keep it focused.</p>
-    </div>
-
-    <!-- Block 1 -->
-    <div class="card" onclick="toggleCard(this)">
-        <div class="card-header">
-            <div class="card-icon" style="background: var(--purple-bg); color: var(--purple);">A</div>
-            <div class="card-title-group">
-                <div class="card-title">Problem Space Before Outbound</div>
-                <div class="card-subtitle">GTM Strategist: Problem Space Deep Dive + Value Proposition Canvas</div>
-            </div>
-            <div class="card-time">8 min</div>
+            <div class="card-time">15 min</div>
             <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
         </div>
         <div class="card-body"><div class="card-content">
-            <h4>Opening — The Uncomfortable Truth</h4>
-            <p>Most outbound campaigns don't fail because of bad tools or poor deliverability. They fail because the sender doesn't truly understand the customer's problem. They pitch features instead of addressing pain. They talk about their product instead of the customer's world.</p>
-
-            <h4>The 4 Layers of Customer Pain (Maja Voje)</h4>
-            <table class="compare-table">
-                <thead><tr><th>Layer</th><th>Question</th><th>Example (HR-Tech SaaS)</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Functional</strong></td><td>What's broken, slow, manual?</td><td>"We track applicants in Excel, candidates fall through the cracks"</td></tr>
-                    <tr><td><strong>Emotional</strong></td><td>What frustrates or scares them?</td><td>"I'm worried we're losing top talent to faster competitors"</td></tr>
-                    <tr><td><strong>Social</strong></td><td>How do they look to boss/board/peers?</td><td>"My CEO asks every week why positions aren't filled"</td></tr>
-                    <tr><td><strong>Financial</strong></td><td>Where's money being burned?</td><td>"Each open role costs us 3,000/month in lost productivity"</td></tr>
-                </tbody>
-            </table>
-
-            <h4>Why This Matters for Outbound</h4>
-            <ul>
-                <li>An email that only hits the functional layer ("We automate your recruiting") gets ignored</li>
-                <li>An email that hits emotional + financial ("You're losing 9,000/month on 3 open roles — and top candidates go to competitors because your process is too slow") gets replies</li>
-                <li>The difference: describing features vs. mirroring the pain the customer actually feels</li>
-            </ul>
-
-            <h4>The Workaround Test</h4>
-            <p>Ask: "What's the worst workaround your target customer uses today?" If the answer is "Excel spreadsheet", "manually by email", "nothing", or "an intern handles it" — you've found a real problem. The worse the current workaround, the higher the willingness to pay.</p>
-
-            <h4>Value Proposition Canvas — The Quick Check</h4>
-            <p>Before outbound makes sense, you need to build this bridge:</p>
-            <div class="matrix-grid">
-                <div class="matrix-cell">
-                    <h5>Customer Profile</h5>
-                    <p><strong>Jobs:</strong> What are they trying to accomplish?<br>
-                    <strong>Pains:</strong> What makes those jobs hard?<br>
-                    <strong>Gains:</strong> What outcome would delight them?</p>
-                </div>
-                <div class="matrix-cell">
-                    <h5>Your Value Map</h5>
-                    <p><strong>Products:</strong> What do you offer?<br>
-                    <strong>Pain Relievers:</strong> How do you reduce specific pains?<br>
-                    <strong>Gain Creators:</strong> How do you create specific gains?</p>
-                </div>
-            </div>
-            <p>If you can't name a specific customer pain for each pain reliever — you lack clarity. No tool can fix that.</p>
-
-            <h4>GTM Power Hour — The 3-Sentence Test</h4>
-            <p>Can you answer each of these in one sentence?</p>
-            <ul>
-                <li><strong>Who</strong> exactly is your customer? (Not "all B2B companies")</li>
-                <li><strong>What problem</strong> do you solve? (In customer language, not feature language)</li>
-                <li><strong>Why you</strong> vs. alternatives? (Including "do nothing")</li>
-            </ul>
-            <p>If you can't &rarr; research is your next step, not campaigns.</p>
+            <h4>Use Case: Job Postings as Intent Signals</h4>
+            <p>How to use hiring data to identify companies with active pain — and write emails that reference what's actually happening inside the company.</p>
+            <h4>Use Case: AI-Powered Account Research</h4>
+            <p>Letting AI analyze a company's website, positioning, and team to generate an account-specific hypothesis — without 30 minutes of manual research per prospect.</p>
+            <h4>Use Case: Micro-Campaigns That Convert</h4>
+            <p>Why 50 deeply researched accounts outperform 5,000 generic contacts — with real reply rate comparisons and a walkthrough of what "deep research" actually looks like.</p>
         </div></div>
     </div>
 
-    <!-- Block 2 -->
     <div class="card" onclick="toggleCard(this)">
         <div class="card-header">
-            <div class="card-icon" style="background: var(--blue-bg); color: var(--blue);">B</div>
+            <div class="card-icon" style="background: var(--orange-bg); color: var(--orange);">3</div>
             <div class="card-title-group">
-                <div class="card-title">Relevance Over Personalization</div>
-                <div class="card-subtitle">Jordan Crawford / Blueprint Methodology</div>
+                <div class="card-title">Q&A — Your Questions</div>
+                <div class="card-subtitle">Addressing pre-submitted and live questions</div>
             </div>
-            <div class="card-time">10 min</div>
+            <div class="card-time">20 min</div>
             <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
         </div>
         <div class="card-body"><div class="card-content">
-            <h4>The Crawford Principle — The Most Important Mindset Shift</h4>
-            <p>Most outbound guides say: "Personalize your emails." That sounds right, but it produces emails like:</p>
-            <div class="example-block">
-                <div class="example-label weak">Personalized (weak)</div>
-                <p>"Hi Thomas, I saw you work at Company X and your LinkedIn post about AI was really interesting. I wanted to introduce myself..."</p>
-            </div>
-            <p>That's personalization. The recipient thinks: "They Googled my name. So what."</p>
-            <p>Crawford's counter-position: <strong>Relevance &gt; Personalization.</strong> Relevance means you understand the person's business problem. You know what's happening inside their company right now. You write an email that <em>could only have been sent to this one person</em>.</p>
-
-            <div class="example-block">
-                <div class="example-label strong">Relevant (strong)</div>
-                <p>"Thomas, you have 3 open SDR roles on your careers page. That means your outbound needs to scale — but new SDRs take 3-6 months to become productive. What if you could get the pipeline results of a 3-person SDR team in 2 weeks, without hiring anyone?"</p>
-            </div>
-            <p>The difference: The second email proves you researched the company and understand what's happening there right now. You're talking about <em>their</em> problem, not <em>your</em> product.</p>
-
-            <h4>Micro-Campaigns — Quality Over Volume</h4>
-            <p>Crawford's rule: 50 deeply researched accounts are worth more than 5,000 generic contacts.</p>
-            <ul>
-                <li>5,000-contact campaigns force generic messaging ("one size fits all")</li>
-                <li>50-contact campaigns allow account-specific research</li>
-                <li>Reply rate for a 50-account micro-campaign: typically 8-15%</li>
-                <li>Reply rate for a 5,000-contact spray-and-pray campaign: 1-2%</li>
-                <li>50 x 12% = 6 real conversations. That's all a seed-stage startup needs.</li>
-            </ul>
-
-            <h4>Creative Data Sources — Data Your Competitors Don't Use</h4>
-            <p>This is where Clay becomes a lever. Not as an email finder, but as a research engine:</p>
-            <table class="compare-table">
-                <thead><tr><th>Data Source</th><th>What It Reveals</th><th>Outbound Angle</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Job Postings</strong></td><td>Who's hiring = has a problem + budget</td><td>"You're hiring a Head of Sales — that means sales is top priority right now"</td></tr>
-                    <tr><td><strong>Tech Stack</strong> (BuiltWith via Clay)</td><td>Which tools they use</td><td>"You use HubSpot but no outbound tool — does that mean inbound alone isn't enough anymore?"</td></tr>
-                    <tr><td><strong>Website Scraping</strong></td><td>Positioning, messaging, target audience</td><td>"Your website targets Enterprise, but your team has 12 people — how do you scale sales?"</td></tr>
-                    <tr><td><strong>Funding Data</strong> (Crunchbase via Clay)</td><td>Just raised = budget + pressure to grow</td><td>"Congrats on the Series A — the clock is ticking now. What's the pipeline plan for Q3?"</td></tr>
-                    <tr><td><strong>G2/Capterra Reviews</strong></td><td>What customers say about competitors</td><td>"The #1 complaint about [competitor] is X — that's exactly what we do differently"</td></tr>
-                </tbody>
-            </table>
-
-            <h4>AI Research Agent in Clay</h4>
-            <p>The most powerful feature for micro-campaigns: let an AI agent (Claude/GPT) run a mini-analysis per account:</p>
-            <ul>
-                <li><strong>Input:</strong> Website, job postings, company data</li>
-                <li><strong>Prompt:</strong> "What's the most likely problem this company has in the area of [your topic]? Formulate a hypothesis in 2 sentences."</li>
-                <li><strong>Output:</strong> An account-specific hypothesis you can directly embed in the email</li>
-            </ul>
-            <p>This is where automation and relevance converge. You're no longer writing generically, but you're also not spending 30 minutes per account on manual research.</p>
+            <p>Questions collected from participants beforehand will be addressed first, followed by open discussion. Topics can include ICP definition, tool setup, copywriting, deliverability — anything related to your outbound challenges.</p>
         </div></div>
     </div>
 
-    <!-- Block 3 -->
     <div class="card" onclick="toggleCard(this)">
         <div class="card-header">
-            <div class="card-icon" style="background: var(--orange-bg); color: var(--orange);">C</div>
+            <div class="card-icon" style="background: var(--green-bg); color: var(--green);">4</div>
             <div class="card-title-group">
-                <div class="card-title">Pain-First Copywriting</div>
-                <div class="card-subtitle">The email structure that gets replies</div>
-            </div>
-            <div class="card-time">7 min</div>
-            <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="card-body"><div class="card-content">
-            <h4>The Framework: Problem &rarr; Implication &rarr; Solution &rarr; Soft CTA</h4>
-            <p>Most cold emails follow this pattern: "We are Company X. We do Y. Our features are Z. Want to chat?" That's a pitch. Nobody replies to pitches from strangers.</p>
-
-            <p>Instead — the Pain-First Framework:</p>
-            <div class="timeline">
-                <div class="timeline-step">
-                    <div class="timeline-dot">1</div>
-                    <div class="timeline-body">
-                        <h5>Name the Problem (Sentence 1)</h5>
-                        <p>Show you understand what's happening at their company. Use data from Clay.<br>
-                        <em>"You have 3 open SDR roles that have been posted for 6 weeks."</em></p>
-                    </div>
-                </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot">2</div>
-                    <div class="timeline-body">
-                        <h5>Show the Implication (Sentence 2)</h5>
-                        <p>What does this problem mean for them? Make the pain concrete.<br>
-                        <em>"That means your pipeline isn't growing, while your burn rate keeps running."</em></p>
-                    </div>
-                </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot">3</div>
-                    <div class="timeline-body">
-                        <h5>Hint at the Solution (Sentence 3)</h5>
-                        <p>No feature list. Only the outcome.<br>
-                        <em>"We helped [similar company] build the pipeline of a 3-person SDR team in 3 weeks — without hiring anyone."</em></p>
-                    </div>
-                </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot">4</div>
-                    <div class="timeline-body">
-                        <h5>Soft CTA (Sentence 4)</h5>
-                        <p>Not "Can we jump on a call?" — that's too much commitment.<br>
-                        <em>"Would it make sense for me to show you how that looks?"</em></p>
-                    </div>
-                </div>
-            </div>
-
-            <p><strong>Total email: 4 sentences. Under 80 words. No attachments. No HTML.</strong></p>
-
-            <h4>3 Copywriting Rules for Founders</h4>
-            <ul>
-                <li><strong>Write like a human, not a marketer.</strong> No buzzwords, no corporate-speak. Imagine you're writing a text to an acquaintance.</li>
-                <li><strong>One idea per email.</strong> Don't cram three value props into one message. One hypothesis, one pain, one question.</li>
-                <li><strong>Subject lines: short, lowercase, specific.</strong> "quick question about your sales team" works better than "Revolutionize Your Sales Pipeline with AI-Powered Automation".</li>
-            </ul>
-        </div></div>
-    </div>
-
-    <!-- Block 4 -->
-    <div class="card" onclick="toggleCard(this)">
-        <div class="card-header">
-            <div class="card-icon" style="background: var(--green-bg); color: var(--green);">D</div>
-            <div class="card-title-group">
-                <div class="card-title">Minimal Viable Outbound Stack</div>
-                <div class="card-subtitle">GTM Strategist: Mission-Critical Filter</div>
+                <div class="card-title">Wrap-Up & Next Steps</div>
+                <div class="card-subtitle">What to do tomorrow</div>
             </div>
             <div class="card-time">5 min</div>
             <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
         </div>
         <div class="card-body"><div class="card-content">
-            <h4>The Seed-Stage Stack</h4>
-            <div class="stack-flow">
-                <div class="stack-node"><strong>Clay</strong> — Research & Enrichment</div>
-                <div class="stack-arrow">&darr;</div>
-                <div class="stack-node"><strong>Instantly</strong> — Email Sending & Warm-up</div>
-                <div class="stack-arrow">&darr;</div>
-                <div class="stack-node"><strong>Claude / GPT</strong> — Personalization & Copy</div>
-                <div class="stack-arrow">&darr;</div>
-                <div class="stack-node"><strong>Google Sheets / Notion</strong> — Tracking</div>
-            </div>
-            <p>That's it. No Salesloft, no Outreach, no 6-tool stack. Cost: ~$200-300/month.</p>
-
-            <h4>Technical Basics You Can't Skip</h4>
-            <ul>
-                <li><strong>Burner domains:</strong> Never send from your main domain. A blocked domain = all your email traffic is compromised. Buy 2-3 similar domains.</li>
-                <li><strong>Warm-up:</strong> New domains need 2-3 weeks of warm-up before you can send. Instantly handles this automatically. Don't skip it.</li>
-                <li><strong>Volume:</strong> Start with max 25-30 emails per day per account. Not 200 on day one.</li>
-                <li><strong>Verification:</strong> Verify every email address before sending. Bounce rate above 3% = domain reputation destroyed.</li>
-            </ul>
-
-            <h4>Mission-Critical Filter (Maja Voje)</h4>
-            <p>For every activity, every new tool, every new tactic — ask 3 questions:</p>
-            <ul>
-                <li>Does this directly move me toward my next milestone?</li>
-                <li>Is there evidence this works in my specific market?</li>
-                <li>Can I execute this well with my current resources?</li>
-            </ul>
-            <p>If not 3/3 &rarr; it's a distraction, not a priority.</p>
-
-            <h4>The Distraction Hit List for Seed-Stage Founders</h4>
-            <div class="tag-row">
-                <span class="tag red">Redesigning the logo again</span>
-                <span class="tag red">Perfecting the website before talking to customers</span>
-                <span class="tag red">Building features nobody asked for</span>
-                <span class="tag red">Attending conferences without a plan</span>
-                <span class="tag red">Evaluating a 3rd tool instead of starting with the 1st</span>
-            </div>
+            <p>Key takeaways, free 1:1 session offer for each startup, and Inovexus partner perks.</p>
         </div></div>
     </div>
-</section>
 
-<!-- ══════════════ PART 2 ══════════════ -->
-<section class="section" id="part2">
-    <div class="section-header">
-        <div class="section-label">Part 2 — 25 Minutes</div>
-        <h2>"Bring Your ICP" — Live Build</h2>
-        <p>2-3 startups from the room bring their target customer. Florian builds the complete workflow live in Clay.</p>
-    </div>
-
-    <div class="timeline">
-        <div class="timeline-step">
-            <div class="timeline-dot">1</div>
-            <div class="timeline-body">
-                <h5>Problem Check (2 min per startup)</h5>
-                <p>"Describe your best customer in 2 sentences." — "What's their biggest problem — in their words, not yours?" — "What do they do today instead?" (Workaround Test)<br><br>
-                If this can't be answered clearly &rarr; that's the real problem. Not the tools.</p>
-            </div>
-        </div>
-        <div class="timeline-step">
-            <div class="timeline-dot">2</div>
-            <div class="timeline-body">
-                <h5>Account Research in Clay — Live (3 min)</h5>
-                <p>Enrich the target company's website in Clay. Pull job postings: what are they hiring for? What does that reveal about their priorities? Check the tech stack: which tools do they already use? Run the AI agent: "What's the most likely problem this company has based on this data?"</p>
-            </div>
-        </div>
-        <div class="timeline-step">
-            <div class="timeline-dot">3</div>
-            <div class="timeline-body">
-                <h5>Write the Email — Live (3 min)</h5>
-                <p>Based on the data: apply the Pain-First framework. Problem &rarr; Implication &rarr; Solution &rarr; Soft CTA. Goal: one email that <em>could only be sent to this one company</em>. Craft the subject line.</p>
-            </div>
-        </div>
-        <div class="timeline-step">
-            <div class="timeline-dot">4</div>
-            <div class="timeline-body">
-                <h5>Group Critique (2 min)</h5>
-                <p>"Is this email relevant — or just personalized?" — "Would you reply to this? Why or why not?" — Crawford check: Could this email be sent to 500 other companies? If yes, it's not good enough.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="card" onclick="toggleCard(this)">
-        <div class="card-header">
-            <div class="card-icon" style="background: var(--orange-bg); color: var(--orange);">Q</div>
-            <div class="card-title-group">
-                <div class="card-title">Pre-Collected Questions</div>
-                <div class="card-subtitle">Woven in between live builds</div>
-            </div>
-            <div class="card-toggle"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-        </div>
-        <div class="card-body"><div class="card-content">
-            <p>Alberto collects questions from the 7 startups 10 days before the workshop. These are addressed between live builds — anchoring the Q&A in real challenges, not hypotheticals.</p>
-            <p>The Inovexus colleague with Clay experience joins for specific tool-related questions during this segment.</p>
-        </div></div>
-    </div>
-</section>
-
-<!-- ══════════════ PART 3 ══════════════ -->
-<section class="section" id="part3">
-    <div class="section-header">
-        <div class="section-label">Part 3 — 5 Minutes</div>
-        <h2>Takeaways & Next Steps</h2>
-        <p>Five rules to walk away with. Each one actionable tomorrow.</p>
+    <!-- ── Key Takeaways ── -->
+    <div class="section-header" style="margin-top: 56px;">
+        <div class="section-label">Participant Takeaways</div>
+        <h2>What Founders Walk Away With</h2>
     </div>
 
     <div class="takeaway-grid">
         <div class="takeaway-card">
             <div class="takeaway-num">1</div>
             <h4>Problem First, Tool Second</h4>
-            <p>Understand your customer's problem across 4 layers before you touch any tool. If you can't describe their pain in their words, outbound won't work.</p>
-            <div class="takeaway-source">GTM Strategist</div>
+            <p>If you can't describe your customer's pain in their words, no tool will save your outbound.</p>
         </div>
         <div class="takeaway-card">
             <div class="takeaway-num">2</div>
             <h4>Relevance &gt; Personalization</h4>
-            <p>Show you understand their business, not that you can Google their name. Write emails that could only be sent to that one person.</p>
-            <div class="takeaway-source">Jordan Crawford</div>
+            <p>Write emails that prove you understand their business — not that you Googled their name.</p>
         </div>
         <div class="takeaway-card">
             <div class="takeaway-num">3</div>
             <h4>50 Right &gt; 5,000 Wrong</h4>
-            <p>Micro-campaigns with deep research beat spray-and-pray every time. You need 5-10 real conversations, not 75 unsubscribe replies.</p>
-            <div class="takeaway-source">Jordan Crawford</div>
-        </div>
-        <div class="takeaway-card">
-            <div class="takeaway-num">4</div>
-            <h4>Pain-First Copywriting</h4>
-            <p>Problem &rarr; Implication &rarr; Solution &rarr; Soft CTA. Four sentences, under 80 words. No attachments. No HTML.</p>
-            <div class="takeaway-source">Crawford + GTM Strategist</div>
-        </div>
-        <div class="takeaway-card">
-            <div class="takeaway-num">5</div>
-            <h4>Mission-Critical Focus</h4>
-            <p>One ICP, one channel, one campaign. Measure. Learn. Then scale. Not 5 channels at once.</p>
-            <div class="takeaway-source">GTM Strategist</div>
+            <p>Micro-campaigns with deep research beat spray-and-pray. Every time.</p>
         </div>
     </div>
 
+    <!-- ── CTA ── -->
     <div class="cta-section">
-        <h3>What's Next for Participants</h3>
-        <p>Every participating startup gets access to personalized follow-up support through the Inovexus partnership.</p>
+        <h3>Next Steps for Participants</h3>
+        <p>Every startup gets a free 1:1 session to deep-dive into their specific ICP and outbound setup.</p>
         <div class="cta-pills">
             <span class="cta-pill primary">Free 1:1 Session (30 min)</span>
-            <span class="cta-pill">ICP Deep Dive</span>
-            <span class="cta-pill">First Campaign Sketch</span>
             <span class="cta-pill">Inovexus Partner Perks</span>
         </div>
         <p style="margin-top: 16px; font-size: 13px; color: var(--text-dim);">No pressure. No deadline. Open offer.</p>
     </div>
-</section>
-
-<!-- ══════════════ MATRIX ══════════════ -->
-<section class="section" id="matrix">
-    <div class="section-header">
-        <div class="section-label">Strategic Rationale</div>
-        <h2>Why This Combination Works</h2>
-        <p>Each framework solves a specific failure mode. Together, they cover the full outbound journey.</p>
-    </div>
-
-    <table class="compare-table">
-        <thead>
-            <tr><th>Framework</th><th>Solves This Problem</th><th>Where in Workshop</th></tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><span class="tag purple" style="margin:0;">GTM Strategist — Problem Space</span></td>
-                <td>"I don't know what to say"</td>
-                <td>Part 1A + Live Build Step 1</td>
-            </tr>
-            <tr>
-                <td><span class="tag purple" style="margin:0;">GTM Strategist — Value Prop Canvas</span></td>
-                <td>"I can't explain why we're different"</td>
-                <td>Part 1A (3-Sentence Test)</td>
-            </tr>
-            <tr>
-                <td><span class="tag purple" style="margin:0;">GTM Strategist — Mission-Critical Filter</span></td>
-                <td>"I'm doing too much at once"</td>
-                <td>Part 1D + Takeaway #5</td>
-            </tr>
-            <tr>
-                <td><span class="tag blue" style="margin:0;">Crawford — Relevance Principle</span></td>
-                <td>"My emails sound generic"</td>
-                <td>Part 1B + Live Build Step 4</td>
-            </tr>
-            <tr>
-                <td><span class="tag blue" style="margin:0;">Crawford — Creative Data Sources</span></td>
-                <td>"I don't have data for good emails"</td>
-                <td>Part 1B + Live Build Step 2</td>
-            </tr>
-            <tr>
-                <td><span class="tag blue" style="margin:0;">Crawford — Micro-Campaigns</span></td>
-                <td>"Should I send 5,000 emails?"</td>
-                <td>Part 1B + Takeaway #3</td>
-            </tr>
-            <tr>
-                <td><span class="tag green" style="margin:0;">Clay (Tool)</span></td>
-                <td>"I don't have time to do this manually"</td>
-                <td>Live Build Steps 2-3</td>
-            </tr>
-            <tr>
-                <td><span class="tag orange" style="margin:0;">Pain-First Copywriting</span></td>
-                <td>"My emails sound like a pitch"</td>
-                <td>Part 1C + Live Build Step 3</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="card" style="margin-top: 32px; border-color: rgba(230,126,34,0.3); background: rgba(230,126,34,0.04);">
-        <div class="card-header" style="cursor: default;">
-            <div class="card-icon" style="background: rgba(230,126,34,0.12); color: #f0a04b;">&#9733;</div>
-            <div class="card-title-group">
-                <div class="card-title">The Core Thesis</div>
-                <div class="card-subtitle">The one idea that ties everything together</div>
-            </div>
-        </div>
-        <div class="card-body" style="max-height: 500px;">
-            <div class="card-content">
-                <p style="font-size: 16px; color: var(--text); line-height: 1.7;">Great outbound results don't come from <strong>more emails</strong> or <strong>better tools</strong>. They come from <strong>deep problem understanding</strong> (GTM Strategist), <strong>relevant messaging</strong> (Crawford), and <strong>targeted automation</strong> (Clay) — in that exact order.</p>
-                <p style="margin-top: 12px;">The participants leave this workshop not just with a tool tutorial, but with a <strong>thinking framework + execution method + tool</strong> — in the right sequence.</p>
-            </div>
-        </div>
-    </div>
 
     <div class="footer">
-        <p>Workshop by Florian Lapiz for Inovexus &middot; Frameworks: GTM Strategist (Maja Voje), Blueprint (Jordan Crawford) &middot; Tool: Clay</p>
+        <p>Workshop by Florian Lapiz for Inovexus</p>
     </div>
-</section>
 </div>
 
 <script>
-    // ── Navigation ──
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            btn.classList.add('active');
-            document.getElementById(btn.dataset.section).classList.add('active');
-            window.scrollTo({ top: document.querySelector('.section-nav').offsetTop, behavior: 'smooth' });
-        });
-    });
-
-    // ── Card Toggle ──
     function toggleCard(card) {
         card.classList.toggle('open');
     }
-
-    // ── Auto-open first card in active section ──
-    document.querySelector('.section.active .card')?.classList.add('open');
+    document.querySelector('.card')?.classList.add('open');
 </script>
 
 </body>
